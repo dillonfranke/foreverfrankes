@@ -68,14 +68,18 @@ body {
     background-color: #274232;
     padding: 0px 0 80px 0;
 }
-.icon {
-    max-width: 50px;
+.footnote {
+    font-size: 2rem;
+    color: #f8f3e6;
+    background-color: #274232;
+    padding: 40px 0 40px 0;
+}
+.connector {
     height: auto;
     margin: 20px auto;
 }
 .event-section {
-    background-color: #274232;
-    color: #f8f3e6;
+    color: #274232;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
