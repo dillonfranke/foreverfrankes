@@ -8,10 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    window.addEventListener("scroll", function() {
+        const textOverlay = document.getElementById("textOverlay");
+        const scrollY = window.scrollY; // How far the page is scrolled
+        const fadeStart = 100; // Point where the fade effect starts
+        const fadeEnd = 300;   // Point where it becomes fully transparent
+        
+        // Calculate opacity
+        let opacity = 1;
+        if (scrollY > fadeStart) {
+            opacity = Math.max(0, 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+        }
+
+        textOverlay.style.opacity = opacity;
+    });
+</script>
 <body>
     <div class="header-image-container">
-        <img src="bridge-shot-3x.png" alt="Isabel and Dillon on a Bridge" class="header-image">
-        <div class="text-overlay">
+        <img src="bridge-shot.jpg" alt="Isabel and Dillon on a Bridge" class="header-image">
+        <div class="text-overlay" id="textOverlay">
             <div class="title">Save the Date</div>
             <div class="date">06.06.25</div>
         </div>
@@ -28,32 +44,80 @@
         </div>
     </div>
     
-    <div class="container">
+    <div class="white-container">
         <img src="connector-line.png" alt="Connector" class="connector">
         
         <div class="event-section">
-            <h2>June 5</h2>
-            <p class="event-details">Wine & Welcome<br>Roche Vineyards<br>7PM to 9PM</p>
-            <img src="wine-bottle.png" alt="Wine Bottle">
+            <h1>June 5</h1>
+            <h2>Wine & Welcome</h2>
+            <p class="event-details">Roche Vineyards<br>7PM to 9PM</p>
+            <img src="wine-bottle.png" alt="Wine Bottle" class="event-image">
         </div>
 
         <img src="connector-line.png" alt="Connector" class="connector">
 
         <div class="event-section">
-            <h2>June 6</h2>
-            <p class="event-details">Wedding Ceremony & Reception<br>Jacuzzi Vineyards<br>6PM to Midnight</p>
-            <img src="jacuzzi.png" alt="Jacuzzi">
+            <h1>June 6</h1>
+            <h2>Wedding Ceremony & Reception</h2>
+            <p class="event-details">Jacuzzi Vineyards<br>6PM to Midnight</p>
+            <img src="jacuzzi.png" alt="Jacuzzi" class="event-image">
         </div>
 
         <img src="connector-line.png" alt="Connector" class="connector">
 
         <div class="event-section">
-            <h2>June 7</h2>
-            <p class="event-details">Farewell Coffee<br>Sonoma Plaza<br>10AM - 11:30AM</p>
-            <img src="jacuzzi.png" alt="Jacuzzi">
+            <h1>June 7</h1>
+            <h2>Farewell Coffee</h2>
+            <p class="event-details">Sonoma Plaza<br>10AM - 11:30AM</p>
+            <img src="jacuzzi.png" alt="Jacuzzi" class="event-image">
         </div>
 
-        <div class="footnote"><i>Formal Invitations to follow</i></div>
+        
     </div>
+    <div class="green-container">
+        <div class="accommodations">
+            <h2>Accommodations in Sonoma</h2>
+            <p>We suggest booking lodging early to secure the best prices. Below are our hotel recommendations, though Airbnb or Vrbo are great alternatives. For convenience, we recommend staying north of Jacuzzi Vineyards to avoid unpredictable traffic.</p>
+            <p>A shuttle will be available on the wedding day to transport guests between Sonoma Plaza and Jacuzzi Vineyards, both before and after the night. There is ample parking at the venue, and cars can be left overnight until 10 AM the following day. Ubers/Lyfts are difficult to obtain at night and in Sonoma, so please plan transportation accordingly.</p>
+        </div>
+    </div>
+
+    <div class="hotel-recommendations-container">
+        <div class="hotel">
+            <h3>The Lodge at Sonoma Resort</h3>
+            <p>1325 Broadway, Sonoma, CA 95476<br><a href="https://www.marriott.com" target="_blank">marriott.com</a></p>
+        </div>
+        <div class="hotel">
+            <h3>Sonoma Valley Inn</h3>
+            <p>550 2nd St W, Sonoma, CA 95476<br><a href="https://www.sonomavalleyinn.com" target="_blank">sonomavalleyinn.com</a></p>
+        </div>
+        <div class="hotel">
+            <h3>Inn at Sonoma, A Four Sisters Inn</h3>
+            <p>630 Broadway, Sonoma, CA 95476<br><a href="https://www.innatsonoma.com" target="_blank">innatsonoma.com</a></p>
+        </div>
+        <div class="hotel">
+            <h3>MacArthur Place Hotel & Spa</h3>
+            <p>29 E MacArthur St, Sonoma, CA 95476<br><a href="https://www.macarthurplace.com" target="_blank">macarthurplace.com</a></p>
+        </div>
+    </div>
+
+    <div class="green-container">
+        <div class="travel-info">
+            <h2>Take Me to California</h2>
+            <p>Traveling directly to Sonoma from the West Coast, we recommend looking into flights to Charles M. Schulz Sonoma County Airport in Santa Rosa supported by Alaska & American Airlines.</p>
+            <p>Traveling directly to Sonoma from the East Coast, we recommend flying into Oakland International Airport located an hour and 15 minutes from Sonoma, pending traffic times.</p>
+            <p>Traveling to San Francisco first, we recommend flying into San Francisco International Airport located an hour and 30 minutes from Sonoma, pending traffic times.</p>
+            <p class="real-id-note">Beginning May 7, 2025, every traveler 18 years of age or older will need a REAL ID-compliant driver's license at airport security checkpoints for domestic air travel.</p>
+            <ul>
+                <li><a href="https://groometransportation.com" target="_blank">Groome Transportation</a>: from the San Francisco and Oakland airports. There are four stops in Sonoma County: Charles M. Schulz – Sonoma County Airport (STS), Santa Rosa Fairgrounds, Doubletree Hotel in Rohnert Park, and Petaluma Fairgrounds.</li>
+                <li><a href="https://goldengate.org" target="_blank">Golden Gate Transit</a>: operates buses 72, 74, 76, and 101 from San Francisco to Petaluma and Santa Rosa. Catch the bus at the San Francisco Bus Facility at 3rd and Perry streets. Check the website for specific routes as some routes operate only during commute hours and others change times because of holidays and weekends.</li>
+                <li><a href="https://goldengateferry.org/schedules/Larkspur.php" target="_blank">Ferry from the San Francisco Ferry Building</a>: to Larkspur Ferry. From there, catch Golden Gate Transit to Sonoma County, or ride a SMART train to Sonoma County.</li>
+                <li><a href="https://sctransit.com" target="_blank">Sonoma County Transit</a>: runs buses from Santa Rosa to Petaluma, Sonoma, and western Sonoma County, including the Russian River Valley towns.</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="footnote"><i>Formal Invitations to follow</i></div>
 </body>
 </html>

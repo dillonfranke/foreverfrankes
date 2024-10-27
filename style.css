@@ -4,33 +4,34 @@ body {
     font-family: serif;
     background-color: #f8f3e6;
 }
-.container {
+.white-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    margin: 20px auto;
 }
 .green-container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     background-color: #274232;
+    color: #f8f3e6;
+    /* padding: 20px; */
 }
 /* Header image full width */
 .header-image-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     overflow: hidden;
     margin: 0 0 0 0;
 }
 .header-image {
     width: 100%;
-    height: auto;
     display: block;
 }
 .text-overlay {
-    position: absolute;
+    position: fixed;
     top: 3%;
     left: 0;
     width: 100%;
@@ -59,7 +60,8 @@ body {
     margin-top: -100px; /* Adjust as needed to overlap the content */
 }
 .crest {
-    width: 150px; /* Adjust to fit the size you want */
+    width: 350px; /* Adjust to fit the size you want */
+    margin: 0 0 20px 0;
     height: auto;
 }
 .details {
@@ -68,39 +70,213 @@ body {
     background-color: #274232;
     padding: 0px 0 80px 0;
 }
+.accommodations {
+    font-size: 1.7rem;
+    color: #f8f3e6;
+    background-color: #274232;
+    padding: 30px 60px;
+}
 .footnote {
     font-size: 2rem;
     color: #f8f3e6;
     background-color: #274232;
     padding: 40px 0 40px 0;
+    text-align: center;
 }
 .connector {
-    height: auto;
-    margin: 20px auto;
+    width: 4px;
+    margin: 10px auto;
+}
+.event-image {
+    transform: scale(0.8);
 }
 .event-section {
     color: #274232;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+}
+.event-section h1 {
+    margin: 0;
 }
 .event-section h2 {
     margin: 0;
     font-size: 1.5rem;
 }
 .event-details {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
+.hotel-recommendations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f8f3e6;
+    padding: 40px 40px;
+}
+
+.hotel {
+    width: 45%;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    color: #274232;
+}
+
+.hotel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hotel p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.hotel-recommendations-container p a {
+    color: #274232;
+    text-decoration: underline;
+}
+.hotel-recommendations-container p a:hover {
+    text-decoration: none;
+}
+
+.escapes-container {
+    background-color: #f8f3e6;
+    text-align: center;
+    padding: 20px;
+    color: #274232;
+}
+
+.escapes-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.escapes-container p a {
+    color: #274232;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.escapes-container p a:hover {
+    text-decoration: none;
+}
+.travel-info {
+    color: #f8f3e6;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.travel-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.travel-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.real-id-note {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.travel-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.travel-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.travel-info ul li a {
+    color: #f8f3e6;
+    text-decoration: underline;
+}
+
+.travel-info ul li a:hover {
+    text-decoration: none;
+}
+
+
+/* Mobile/Small Screens */
 @media (max-width: 768px) {
+    /* Text Overlay - stack vertically */
     .text-overlay {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    .text-overlay .date, .text-overlay .title {
-        font-size: 2.5rem;
+
+    .text-overlay .title, .text-overlay .date {
+        font-size: 2.5rem; /* Adjust the font size for mobile */
         margin-bottom: 10px;
+        text-align: center;
     }
+
+    /* Header Image height reduced */
+    .header-image-container {
+        height: 50vh; /* Reduce image height for smaller screens */
+    }
+
+    /* Reduce details font size */
     .details {
+        font-size: 1.5rem;
+        padding: 40px 0;
+    }
+
+    .crest-container {
+        position: relative;
+        display: flex;
+        background-color: none;
+        justify-content: center; /* Centers horizontally */
+        z-index: 10; /* Ensures it's above other content */
+        margin-top: -60px; /* Adjust as needed to overlap the content */
+    }
+
+    /* Crest size reduced */
+    .crest {
+        width: 100px; /* Smaller crest for mobile */
+    }
+
+    /* Event details */
+    .event-section h2 {
+        font-size: 1.2rem; /* Slightly smaller font for event section titles */
+    }
+
+    .event-details {
+        font-size: 1.2rem; /* Reduce font size for event details */
+    }
+
+    .footnote {
+        font-size: 1.2rem; /* Smaller footnote text */
+        padding: 20px 0;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .text-overlay .title, .text-overlay .date {
+        font-size: 2rem; /* Even smaller text for very small screens */
+    }
+
+    .details {
+        font-size: 1.2rem;
+        padding: 30px 0;
+    }
+
+    .footnote {
         font-size: 1rem;
+        padding: 15px 0;
     }
 }
