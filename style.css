@@ -1,8 +1,35 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: serif;
-    background-color: #f8f3e6;
+    font-family: "abril-display", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #faf5f1;
+    letter-spacing: 0.2em;
+}
+p {
+    font-family: "abril-text", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in-section.visible {
+    animation: fadeIn 1s ease forwards;
 }
 .white-container {
     width: 100%;
@@ -16,7 +43,7 @@ body {
     margin: 0 auto;
     text-align: center;
     background-color: #274232;
-    color: #f8f3e6;
+    color: #faf5f1;
     /* padding: 20px; */
 }
 /* Header image full width */
@@ -37,7 +64,7 @@ body {
     width: 100%;
     padding: 0 20px;
     display: flex;
-    color: #2f554d; /* Green color */
+    color: #203321; /* Green color */
     justify-content: space-between;
 }
 
@@ -66,19 +93,19 @@ body {
 }
 .details {
     font-size: 2rem;
-    color: #f8f3e6;
+    color: #faf5f1;
     background-color: #274232;
     padding: 0px 0 80px 0;
 }
 .accommodations {
     font-size: 1.7rem;
-    color: #f8f3e6;
+    color: #faf5f1;
     background-color: #274232;
     padding: 30px 60px;
 }
 .footnote {
     font-size: 2rem;
-    color: #f8f3e6;
+    color: #faf5f1;
     background-color: #274232;
     padding: 40px 0 40px 0;
     text-align: center;
@@ -110,7 +137,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #f8f3e6;
+    background-color: #faf5f1;
     padding: 40px 40px;
 }
 
@@ -141,7 +168,7 @@ body {
 }
 
 .escapes-container {
-    background-color: #f8f3e6;
+    background-color: #faf5f1;
     text-align: center;
     padding: 20px;
     color: #274232;
@@ -205,6 +232,35 @@ body {
 }
 
 .travel-info ul li a:hover {
+    text-decoration: none;
+}
+
+}
+.getting-around {
+    justify-content: center;
+    background-color: #faf5f1;
+    padding: 40px 40px;
+    color: #274232;
+}
+
+.getting-around h2 {
+    color: #274232;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.getting-around p {
+    color: #274232;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.getting-around p a {
+    color: #274232;
+    text-decoration: underline;
+}
+.getting-around p a:hover {
     text-decoration: none;
 }
 

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Save the Date - Isabel and Dillon</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xep3eua.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
@@ -24,9 +25,25 @@
         textOverlay.style.opacity = opacity;
     });
 </script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis({
+        duration: 0.4,        // Adjust for speed of the scroll (1.2s duration per scroll distance)
+        easing: (t) => t * (2 - t), // Smooth easing function
+        smooth: true,         // Enables smooth scrolling
+        direction: 'vertical' // Vertical scrolling
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+</script> 
 <body>
     <div class="header-image-container">
-        <img src="bridge-shot.jpg" alt="Isabel and Dillon on a Bridge" class="header-image">
+        <img src="bridge-shot.png" alt="Isabel and Dillon on a Bridge" class="header-image">
         <div class="text-overlay" id="textOverlay">
             <div class="title">Save the Date</div>
             <div class="date">06.06.25</div>
@@ -114,6 +131,14 @@
                 <li><a href="https://goldengateferry.org/schedules/Larkspur.php" target="_blank">Ferry from the San Francisco Ferry Building</a>: to Larkspur Ferry. From there, catch Golden Gate Transit to Sonoma County, or ride a SMART train to Sonoma County.</li>
                 <li><a href="https://sctransit.com" target="_blank">Sonoma County Transit</a>: runs buses from Santa Rosa to Petaluma, Sonoma, and western Sonoma County, including the Russian River Valley towns.</li>
             </ul>
+        </div>
+    </div>
+
+    <div class="white-container">
+        <div class="getting-around">
+            <h2>Getting Around Sonoma</h2>
+            <p>A shuttle will be available on the wedding day to transport guests between Sonoma Plaza and Jacuzzi Vineyards, both before and after the night. There is ample parking at the venue, and cars can be left overnight until 10 AM the following day. Ubers/Lyfts are diffcult to obtain at night and in Sonoma, so please plan transportation accordingly.</p>
+            <p>For car rentals, we recommend using <a href="https://turo.com" target="_blank">Turo</a> for the best pricing.</p>
         </div>
     </div>
     
