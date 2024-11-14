@@ -36,15 +36,14 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
 }
 .green-container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
-    background-color: #274232;
+    background-color: #444C27;
     color: #faf5f1;
-    /* padding: 20px; */
 }
 /* Header image full width */
 .header-image-container {
@@ -64,7 +63,7 @@ p {
     width: 100%;
     padding: 0 20px;
     display: flex;
-    color: #203321; /* Green color */
+    color: #000000; /* Green color */
     justify-content: space-between;
 }
 
@@ -78,37 +77,55 @@ p {
     margin-right: 55px;
     text-align: left;
 }
-.crest-container {
-    position: relative;
-    display: flex;
-    background-color: none;
-    justify-content: center; /* Centers horizontally */
-    z-index: 10; /* Ensures it's above other content */
-    margin-top: -100px; /* Adjust as needed to overlap the content */
-}
-.crest {
-    width: 350px; /* Adjust to fit the size you want */
-    margin: 0 0 20px 0;
-    height: auto;
-}
 .details {
     font-size: 2rem;
     color: #faf5f1;
-    background-color: #274232;
-    padding: 0px 0 80px 0;
+    background-image: url('vines.png');
+    background-color: #444C27;
+    /* background-size: cover; */
+    background-position: center;
+    padding: 80px 0 80px 0;
+    margin: 0;
 }
-.accommodations {
-    font-size: 1.7rem;
-    color: #faf5f1;
-    background-color: #274232;
-    padding: 30px 60px;
+.accommodations-section {
+    display: flex;
+    align-items: stretch; /* Ensures both items stretch to the same height */
+    border-bottom: 5px solid #434B26;
+    border-top: 5px solid #434B26;
+}
+
+.accommodations-image, .accommodations-text {
+    flex-grow: 1; /* Makes both divs expand to the same height */
+    width: 50%; /* Ensures each takes half the section width */
+}
+
+.accommodations-image {
+    object-fit: cover;
+}
+
+.accommodations-text {
+    background-image: url('vines2.png');
+    background-size: cover;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 75px;
+}
+
+.accommodations-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.accommodations-text p {
+    margin-bottom: 10px;
 }
 .footnote {
-    font-size: 2rem;
-    color: #faf5f1;
-    background-color: #274232;
+    color: #274232;
+    background-color: #faf5f1;
     padding: 40px 0 40px 0;
     text-align: center;
+    border-bottom: 5px solid #434B26;
 }
 .connector {
     width: 4px;
@@ -118,7 +135,7 @@ p {
     transform: scale(0.8);
 }
 .event-section {
-    color: #274232;
+    color: #000000;
     padding: 0px;
     border-radius: 10px;
     margin-bottom: 0px;
@@ -133,6 +150,11 @@ p {
 .event-details {
     font-size: 1.2rem;
 }
+.button-div {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px 50px 0px;
+}
 .hotel-recommendations-container {
     display: flex;
     flex-wrap: wrap;
@@ -146,7 +168,7 @@ p {
     max-width: 300px;
     margin: 20px;
     text-align: center;
-    color: #274232;
+    color: #000000;
 }
 
 .hotel h3 {
@@ -160,7 +182,7 @@ p {
 }
 
 .hotel-recommendations-container p a {
-    color: #274232;
+    color: #000000;
     text-decoration: underline;
 }
 .hotel-recommendations-container p a:hover {
@@ -171,7 +193,7 @@ p {
     background-color: #faf5f1;
     text-align: center;
     padding: 20px;
-    color: #274232;
+    color: #000000;
 }
 
 .escapes-container h3 {
@@ -180,7 +202,7 @@ p {
 }
 
 .escapes-container p a {
-    color: #274232;
+    color: #000000;
     font-size: 1.2rem;
     text-decoration: underline;
 }
@@ -207,12 +229,6 @@ p {
     margin-bottom: 20px;
 }
 
-.real-id-note {
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
 .travel-info ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -235,12 +251,12 @@ p {
     text-decoration: none;
 }
 
-}
 .getting-around {
     justify-content: center;
     background-color: #faf5f1;
     padding: 40px 40px;
-    color: #274232;
+    color: #000000;
+    border-bottom: 5px solid #434B26;
 }
 
 .getting-around h2 {
@@ -257,11 +273,78 @@ p {
 }
 
 .getting-around p a {
-    color: #274232;
+    color: #000000;
     text-decoration: underline;
 }
 .getting-around p a:hover {
     text-decoration: none;
+}
+
+img.button {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.quote-section {
+    border-bottom: 5px solid #434B26;
+    border-top: 5px solid #434B26;
+    position: relative;
+    background-image: url('quote-photo.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+
+.quote-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.quote-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    text-align: right;
+    margin-right: 140px;
+}
+
+.quote-text {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #434B26;
+    font-weight: bold;
+}
+
+.quote-author {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.designer-credit {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust width as needed */
+    background-image: url('leaves.svg'); /* Use your actual SVG or image file path here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0; /* Adjust padding as needed to show the full background graphic */
+    text-align: center;
+}
+
+.designer-text {
+    font-weight: 400;
 }
 
 
@@ -315,6 +398,7 @@ p {
     }
 
     .footnote {
+        background-color: #faf5f1;
         font-size: 1.2rem; /* Smaller footnote text */
         padding: 20px 0;
     }
