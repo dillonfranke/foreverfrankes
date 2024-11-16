@@ -14,7 +14,7 @@
         const textOverlay = document.getElementById("textOverlay");
         const scrollY = window.scrollY; // How far the page is scrolled
         const fadeStart = 50; // Point where the fade effect starts
-        const fadeEnd = 600;   // Point where it becomes fully transparent
+        const fadeEnd = 400;   // Point where it becomes fully transparent
         
         // Calculate opacity
         let opacity = 1;
@@ -43,28 +43,26 @@
 </script> 
 <body>
     <div class="header-image-container">
-        <img src="bridge-shot.jpg" alt="Isabel and Dillon on a Bridge" class="header-image">
         <div class="text-overlay" id="textOverlay">
             <div class="title">Save the Date</div>
             <div class="date">06.06.25</div>
         </div>
     </div>
 
-    <div class="green-container">
-        <div class="details">
-            Together with our families,<br>
-            we would be overjoyed<br>
-            to have you share in our ceremony<br>
-            and dance the night away with us<br>
-            in <strong>Sonoma, California</strong>.
-        </div>
+    <div class="overjoyed">
+        <p>Together with our families,<br>
+        we would be overjoyed<br>
+        to have you share in our ceremony<br>
+        and dance the night away with us<br>
+        in <strong>Sonoma, California</strong>.</p>
     </div>
+
     
     <div class="white-container">
         <img src="connector-line.png" alt="Connector" class="connector">
         
         <div class="event-section">
-            <img src="welcome.png" alt="Wine Bottle" class="event-image">
+            <img src="welcome.png" alt="Wine Bottle" class="event-image" id="welcome">
             <h1>Thursday, June 5</h1>
             <h2>Wine & Welcome</h2>
             <p class="event-details">Roche Vineyards<br>7PM to 9PM</p>
@@ -73,16 +71,16 @@
         <img src="connector-line.png" alt="Connector" class="connector">
 
         <div class="event-section">
-            <img src="jacuzzi.png" alt="Jacuzzi" class="event-image">
+            <img src="jacuzzi.png" alt="Jacuzzi" class="event-image"  id="jacuzzi">
             <h1>Friday, June 6</h1>
             <h2>Wedding Ceremony & Reception</h2>
-            <p class="event-details">Jacuzzi Vineyards<br>Festive Black6PM to Midnight</p>
+            <p class="event-details">Jacuzzi Vineyards<br>Festive Black<br>6PM to Midnight</p>
         </div>
 
         <img src="connector-line.png" alt="Connector" class="connector">
 
         <div class="event-section">
-            <img src="croissant.png" alt="Coffee" class="event-image">
+            <img src="croissant.png" alt="Coffee" class="event-image" id="croissant">
             <h1>Saturday, June 7</h1>
             <h2>Farewell Coffee</h2>
             <p class="event-details">Sonoma Plaza<br>10AM - 11:30AM</p>
@@ -92,7 +90,7 @@
     </div>
     <div class="green-container">
         <div class="accommodations-section">
-            <img src="beebs.png" alt="The Beebs, overlooking a beautiful vineyard" class="accommodations-image">
+            <img src="beebs-min.png" alt="The Beebs, overlooking a beautiful vineyard" class="accommodations-image">
             <div class="accommodations-text">
                 <h2>We would be thrilled to have you join us! To ensure the best rates, we recommend booking accommodations early.</h2>
                 <p>Below are our hotel recommendations, though Airbnb or Vrbo are great alternatives. For convenience, we recommend staying north of Jacuzzi Vineyards to avoid unpredictable traffic.</p>
@@ -104,26 +102,30 @@
     </div>
 
     <div class="hotel-recommendations-container">
-        <div class="hotel">
+        <div class="hotel" id="figs">
             <h3>The Lodge at Sonoma Resort</h3>
-            <p>1325 Broadway, Sonoma, CA 95476<br><a href="https://www.marriott.com" target="_blank">marriott.com</a></p>
+            <p>1325 Broadway, Sonoma, CA 95476</p>
+            <p><a href="https://www.marriott.com" target="_blank">marriott.com</a></p>
         </div>
-        <div class="hotel">
+        <div class="hotel" id="birch">
             <h3>Sonoma Valley Inn</h3>
-            <p>550 2nd St W, Sonoma, CA 95476<br><a href="https://www.sonomavalleyinn.com" target="_blank">sonomavalleyinn.com</a></p>
+            <p>550 2nd St W, Sonoma, CA 95476</p>
+            <p><a href="https://www.sonomavalleyinn.com" target="_blank">sonomavalleyinn.com</a></p>
         </div>
-        <div class="hotel">
+        <div class="hotel" id="maple">
             <h3>Inn at Sonoma, A Four Sisters Inn</h3>
-            <p>630 Broadway, Sonoma, CA 95476<br><a href="https://www.innatsonoma.com" target="_blank">innatsonoma.com</a></p>
+            <p>630 Broadway, Sonoma, CA 95476</p>
+            <p><a href="https://www.innatsonoma.com" target="_blank">innatsonoma.com</a></p>
         </div>
-        <div class="hotel">
+        <div class="hotel" id="cherries">
             <h3>MacArthur Place Hotel & Spa</h3>
-            <p>29 E MacArthur St, Sonoma, CA 95476<br><a href="https://www.macarthurplace.com" target="_blank">macarthurplace.com</a></p>
+            <p>29 E MacArthur St, Sonoma, CA 95476</p>
+            <p><a href="https://www.macarthurplace.com" target="_blank">macarthurplace.com</a></p>
         </div>
     </div>
 
     <div class="button-div">
-        <a href="https://chickens.com" target="_blank">
+        <a href="https://drive.google.com/drive/folders/1hr9_u5q0I2KS_OGIFLw0lLkr06o182z4?usp=sharing" target="_blank">
             <img src="button.svg" alt="Button Background" class="button">
         </a>
     </div>
