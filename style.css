@@ -7,6 +7,13 @@ body {
     background-color: #faf5f1;
     letter-spacing: 0.2em;
 }
+/* img {
+    filter: blur(10px);
+    transition: filter 0.5s;
+  }
+img.loaded {
+    filter: blur(0px);
+    } */
 p {
     font-family: "abril-text", serif;
     font-weight: 300;
@@ -80,6 +87,8 @@ p {
 .details {
     font-size: 2rem;
     color: #faf5f1;
+    border-bottom: 5px solid #434B26;
+    border-top: 5px solid #434B26;
     background-image: url('vines.png');
     background-color: #444C27;
     /* background-size: cover; */
@@ -142,6 +151,7 @@ p {
 }
 .event-section h1 {
     margin: 0;
+    text-transform: uppercase;
 }
 .event-section h2 {
     margin: 0;
