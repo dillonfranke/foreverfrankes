@@ -64,6 +64,7 @@ html, body {
     background-image: url('vines.png');
     background-color: #444C27;
     background-position: center;
+    background-size: cover;
     padding: 60px 0 60px 0;
     width: 100%;
     margin: 0;
@@ -123,7 +124,6 @@ html, body {
 .accommodations-image {
     object-fit: cover;
 }
-
 .accommodations-text {
     background-image: url('vines2.png');
     background-size: cover;
@@ -301,9 +301,24 @@ img.button {
 /* Responsive styling (Mobile) */
 @media (max-width: 768px) {
     .header-image-container {
-        background-size: 180%;
+        background-size: 200%;
         background-position: center top; /* Focus on the top of the image */
-        height: 1100px; /* Reduce height to fit smaller screens */
+        height: 600px; /* Reduce height to fit smaller screens */
+    }
+
+    .hotel {
+        min-width: 210px;
+        margin: 30px;
+        line-height: 1.5em;
+    }
+
+    .hotel p a {
+        display: inline-block; /* Centers the link text inside its block */
+        text-decoration: underline; /* Keeps the underline for links */
+        color: inherit; /* Match the text color to the parent */
+        text-align: center; /* Center-align the text inside the link */
+        white-space: nowrap; /* Prevents text from breaking into multiple lines */
+        max-width: 100%; /* Ensures the text does not overflow outside the container */
     }
 
     .accommodations-section {
@@ -331,6 +346,9 @@ img.button {
         max-width: 100%;
         font-weight: 200;
     }
+    .accommodations-text h2 {
+        font-size: 2rem;
+    }
     .text-overlay {
         flex-direction: column;
         align-items: left;
@@ -346,11 +364,8 @@ img.button {
     }
 
     .overjoyed {
-        font-size: 1.5rem;
-    }
-
-    .header-image-container {
-        height: 50vh;
+        padding: 20px 0;
+        font-size: 1.4rem;
     }
 
     .details {
