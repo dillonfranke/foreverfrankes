@@ -16,7 +16,7 @@ html, body {
     width: 100%;
     padding: 0 20px;
     display: flex;
-    color: #000000;
+    color: #444C27;
     justify-content: space-between;
     /* text-shadow: 2px 2px 2px black; */
 }
@@ -69,6 +69,7 @@ html, body {
     width: 100%;
     margin: 0;
     text-align: center;
+    line-height: 0.95em;
 }
 
 .white-container {
@@ -106,7 +107,8 @@ html, body {
 }
 
 .event-details {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: -0.1px;
 }
 
 .accommodations-section {
@@ -132,6 +134,7 @@ html, body {
     text-align: left;
     padding: 75px;
     overflow: hidden;
+    letter-spacing: -0.1px;
 }
 
 .accommodations-text h2 {
@@ -161,6 +164,7 @@ html, body {
 
 .hotel p {
     text-align: center;
+    letter-spacing: -0.1px;
 }
 
 .hotel p a {
