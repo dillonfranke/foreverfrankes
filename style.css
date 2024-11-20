@@ -341,7 +341,6 @@ img.button {
         width: 100%;
         padding: 25px;
         font-size: 1.3rem;
-        line-height: 1.6;
         text-align: left;
         background-image: url('vines2.png');
         background-size: cover;
@@ -354,6 +353,7 @@ img.button {
     }
     .accommodations-text h2 {
         font-size: 2rem;
+        line-height: 1.2;
     }
     .text-overlay {
         flex-direction: column;
