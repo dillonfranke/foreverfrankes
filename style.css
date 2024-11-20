@@ -69,7 +69,8 @@ html, body {
     width: 100%;
     margin: 0;
     text-align: center;
-    line-height: 0.95em;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
 }
 
 .white-container {
@@ -130,7 +131,7 @@ html, body {
     background-image: url('vines2.png');
     background-size: cover;
     font-size: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: left;
     padding: 75px;
     overflow: hidden;
@@ -267,9 +268,10 @@ img.button {
 
 .quote-text {
     font-size: 1.7rem;
-    line-height: 1.6;
+    line-height: 1.3;
     color: #434B26;
     font-weight: bold;
+    letter-spacing: -0.1px;
 }
 
 .quote-author {
