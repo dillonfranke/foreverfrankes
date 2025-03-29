@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "abril-display", serif;
+    font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
     background-color: #faf5f1;
@@ -9,27 +9,32 @@ html, body {
     width: 100%;
 }
 
-.text-overlay {
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .text-overlay {
     position: fixed;
-    top: 3%;
-    left: 0;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    padding: 0 20px;
+    color: #FFFFFF;
+    font-family: "Baskervville SC", serif;
     display: flex;
-    color: #444C27;
-    justify-content: space-between;
-    /* text-shadow: 2px 2px 2px black; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .text-overlay .title {
     font-size: 5rem;
-    margin-left: 20px;
 }
 
 .text-overlay .date {
-    font-size: 5rem;
-    margin-right: 55px;
-    text-align: left;
+    font-size: 4rem;
 }
 
 .header-image-container {
@@ -37,7 +42,7 @@ html, body {
     width: 100%;
     height: 1900px;
     overflow: hidden;
-    background-image: url('bridge-shot-min.jpg'); /* Replace with your image URL */
+    background-image: url('the-frankes-city-hall.png'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the container */
     background-position: center center; /* Centers the image */
 }
@@ -59,26 +64,54 @@ html, body {
 .overjoyed {
     font-size: 2rem;
     color: #faf5f1;
+    opacity: 0.9;
     border-bottom: 5px solid #434B26;
     border-top: 5px solid #434B26;
     background-image: url('vines.png');
     background-color: #444C27;
     background-position: center;
     background-size: cover;
-    padding: 50px 0 50px 0;
+    padding: 50px 0px;
     width: 100%;
     margin: 0;
+    font-weight: 200;
     text-align: center;
     line-height: 1.2;
     letter-spacing: -0.1px;
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    justify-content: space-between; /* Pushes items to the edges */
+    align-items: center; /* Aligns items vertically */
+    position: relative;
 }
 
-.white-container {
+.overjoyed-left {
+    text-align: left; /* Ensures text aligns left */
+    max-width: 600px; /* Optional: Limits content width */
+    margin-left: 15%;
+}
+
+.overjoyed a {
+    margin-right: 15%; /* Adds spacing from the right edge */
+    display: inline-block;
+}
+
+.overjoyed img {
+    max-width: 80%; /* Adjusts image height */
+    height: auto; /* Ensures aspect ratio is maintained */
+}
+
+.weekend-details {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     margin: 20px auto 50px auto;
+    margin-top: 80px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .connector {
@@ -91,6 +124,10 @@ html, body {
     padding: 0px;
     border-radius: 10px;
     margin-bottom: 0px;
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .event-image {
@@ -258,6 +295,10 @@ img.button {
     z-index: 1;
 }
 
+#jacuzzi {
+    margin-left: -50px;
+}
+
 .quote-overlay {
     position: relative;
     z-index: 2;
@@ -288,6 +329,27 @@ img.button {
     border-bottom: 5px solid #434B26;
 }
 
+.more-weekend-details {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px auto 50px auto;
+    margin-top: 80px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-weekend-details h2{
+    margin-left: 20px;
+    margin-bottom: -20px;
+    font-size: 3rem;
+    font-family: 'Baskervville SC', serif;
+    margin-bottom: 40px;
+}
+
 .designer-credit {
     position: relative;
     display: inline-block;
@@ -308,7 +370,7 @@ img.button {
 @media (max-width: 768px) {
     .header-image-container {
         background-size: 200%;
-        background-position: center top; /* Focus on the top of the image */
+        background-position: center bottom; /* Focus on the top of the image */
         height: 600px; /* Reduce height to fit smaller screens */
     }
 
@@ -360,19 +422,76 @@ img.button {
         align-items: left;
         margin: 0px;
         padding: 0px;
-        margin-left: 20px;
+        margin-left: 0px;
         position: fixed;
+        text-align: center;
     }
 
     .text-overlay .title, .text-overlay .date {
-        font-size: 3.1rem;
-        margin: 0px 0px 10px 0px;
-        text-align: left;
+        font-size: 2.5rem;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
     }
 
     .overjoyed {
         padding: 20px 0;
         font-size: 1.4rem;
+        display: block;
+    }
+
+    .overjoyed-left {
+        max-width: auto; /* Optional: Limits content width */
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .overjoyed a {
+        margin: 20px 0px 0px 0px;
+        transform: scale(0.7);
+    }
+
+    .weekend-details {
+        width: 100%;
+        max-width: 1200px;
+        margin: 10px;
+        text-align: center;
+        margin: 10px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .weekend-details h2 {
+        margin-left: 20px;
+        margin-bottom: -20px;
+    }
+
+    .more-weekend-details h2 {
+        margin-left: 20px;
+        margin-bottom: -20px;
+    }
+
+    .weekend-details img {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .event-section p {
+        padding: 15px;
+    }
+
+    .event-section h3 {
+        padding: 15px;
+    }
+
+    .weekend-details p {
+        margin-right: 10px;
+    }
+
+    #jacuzzi {
+        margin-left: 0px;
     }
 
     .details {
@@ -414,8 +533,20 @@ img.button {
         margin-right: 0;
     }
 
+    .event-section {
+        color: #000000;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 60px;
+        display: block;
+    }
+
     .event-section h2 {
         font-size: 1.2rem;
+    }
+
+    .event-section img {
+        text-align: center;
     }
 
     .event-details {

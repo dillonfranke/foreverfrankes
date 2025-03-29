@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isabel and Dillon's Wedding!</title>
     <link rel="stylesheet" href="https://use.typekit.net/xep3eua.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta property="og:title" content="Isabel and Dillon's Wedding!" />
     <meta property="og:description" content="Join us for a beautiful wedding celebration in Sonoma, California!" />
@@ -18,8 +22,8 @@
         const headerImage = document.getElementsByClassName("header-image-container")[0];
         const textOverlay = document.getElementById("textOverlay");
         const scrollY = window.scrollY; // How far the page is scrolled
-        const fadeStart = 50; // Point where the fade effect starts
-        const fadeEnd = 400;   // Point where it becomes fully transparent
+        const fadeStart = 100; // Point where the fade effect starts
+        const fadeEnd = 800;   // Point where it becomes fully transparent
         
         // Calculate opacity
         let opacity = 1;
@@ -49,105 +53,134 @@
 <body>
     <div class="header-image-container">
         <div class="text-overlay" id="textOverlay">
-            <div class="title">Save the Date</div>
+            <div class="title">The Wedding of<br>Isabel & Dillon</div>
             <div class="date">06.06.25</div>
         </div>
     </div>
 
     <div class="overjoyed">
-        Together with our families,<br>
-        we warmly invite you<br>
-        to witness our sacred vows<br>
-        and dance the night away<br>
-        with us in beautiful<br>
-        <strong>Sonoma, California</strong>
+        <div class="overjoyed-left">
+            Together with our families,<br>
+            we warmly invite you<br>
+            to witness our sacred vows<br>
+            and dance the night away<br>
+            with us in beautiful<br>
+            <strong>Sonoma, California</strong>
+        </div>
+        <a target="_blank" href="https://withjoy.com/isabel-and-dillon-jun-25/rsvp"><img src="rsvp-button.svg"></a>
     </div>
 
     
-    <div class="white-container">
-        <img src="connector-line.png" alt="Connector" class="connector">
-        
-        <div class="event-section">
-            <img src="welcome.png" alt="Wine Bottle" class="event-image" id="welcome">
-            <h1>Thursday, June 5</h1>
-            <h2>Wine & Welcome</h2>
-            <p class="event-details">Roche Vineyards<br>7PM to 9PM</p>
-        </div>
+<!-- Start of The Weekend Details Section -->
+<div class="weekend-details">
+    <h2 style="font-size: 3rem; font-family: 'Baskervville SC', serif;">The Weekend Details</h2>
 
-        <img src="connector-line.png" alt="Connector" class="connector">
-
-        <div class="event-section">
-            <img src="jacuzzi.png" alt="Jacuzzi" class="event-image"  id="jacuzzi">
-            <h1>Friday, June 6</h1>
-            <h2>Wedding Ceremony<br>
-                & Reception</h2>
-            <p class="event-details">Jacuzzi Vineyards<br>Festive Black Tie<br>6PM to Midnight</p>
-        </div>
-
-        <img src="connector-line.png" alt="Connector" class="connector">
-
-        <div class="event-section">
-            <img src="croissant.png" alt="Coffee" class="event-image" id="croissant">
-            <h1>Saturday, June 7</h1>
-            <h2>Farewell Coffee</h2>
-            <p class="event-details">Sonoma Plaza<br>10AM - 11:30AM</p>
-        </div>
-
-        
-    </div>
-    <div class="green-container">
-        <div class="accommodations-section">
-            <img src="beebs-min.png" alt="The Beebs, overlooking a beautiful vineyard" class="accommodations-image">
-            <div class="accommodations-text">
-                <h2>We would be thrilled to have you join us! To ensure the best rates, we recommend booking accommodations early.</h2>
-                <p>Below are our hotel recommendations, though Airbnb or Vrbo are great alternatives. For convenience, we recommend staying north of Jacuzzi Vineyards to avoid unpredictable traffic.</p>
-                <p>A shuttle will be available on the wedding day to transport guests between Sonoma Plaza and Jacuzzi Vineyards, both before and after the night.</p>
-                <p>There is ample parking at the venue, and cars can be left overnight until 10 AM the following day.
-                <p>Ubers/Lyfts are difficult to obtain at night in Sonoma, so please plan transportation accordingly.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="hotel-recommendations-container">
-        <div class="hotel" id="figs">
-            <h3>The Lodge at Sonoma Resort</h3>
-            <p>1325 Broadway, Sonoma, CA 95476</p>
-            <p><a href="https://www.marriott.com/en-us/hotels/sfoas-the-lodge-at-sonoma-resort-autograph-collection/overview/" target="_blank">marriott.com</a></p>
-        </div>
-        <div class="hotel" id="birch">
-            <h3>Sonoma Valley Inn</h3>
-            <p>550 2nd St W, Sonoma, CA 95476</p>
-            <p><a href="https://www.sonomavalleyinn.com" target="_blank">sonomavalleyinn.com</a></p>
-        </div>
-        <div class="hotel" id="maple">
-            <h3>Inn at Sonoma, A Four Sisters Inn</h3>
-            <p>630 Broadway, Sonoma, CA 95476</p>
-            <p><a href="https://www.innatsonoma.com" target="_blank">innatsonoma.com</a></p>
-        </div>
-        <div class="hotel" id="cherries">
-            <h3>MacArthur Place Hotel & Spa</h3>
-            <p>29 E MacArthur St, Sonoma, CA 95476</p>
-            <p><a href="https://www.macarthurplace.com" target="_blank">macarthurplace.com</a></p>
-        </div>
-    </div>
-
-    <div class="button-div">
-        <a href="https://drive.google.com/drive/folders/1hr9_u5q0I2KS_OGIFLw0lLkr06o182z4?usp=sharing" target="_blank">
-            <img src="button.svg" alt="Button Background" class="button">
-        </a>
-    </div>
-
-    <div class="quote-section">
-        <div class="quote-overlay">
-            <p class="quote-text">
-                To be loved but not known is comforting but superficial.<br><br>
-                To be known and not loved is our greatest fear.<br><br>
-                But to be fully known—and truly loved is, well, a lot like being loved by God.
+    <div class="event-section">
+        <img src="welcome.png" alt="Welcome Illustration" class="event-image" style="width: 150px; flex-shrink: 0;">
+        <div>
+            <h3 style="font-size: 1.4rem; font-family: 'Baskervville SC', serif;">Wine & Welcome</h3>
+            <p style="font-size: 1.3rem; line-height: 1.7;">
+                <strong>Thursday, June 5 from 6PM to 9PM</strong><br>
+                Roche Winery, Sonoma CA<br><br>
+                We're kicking off the weekend with a welcome party at Roche Winery. Join us for wine tasting and good vibes. Dress up or dress down—no need to overthink the flip-flops.<br><br>
+                We'll have a patio bar, apps & heavy appetizers to keep things casual and festive. Sonoma food trucks & special pizza in the house. Good cocktails & DJs. Pajamas & a small nod to the French are bonus.
             </p>
-            <p class="quote-author">— Timothy Keller</p>
         </div>
     </div>
+
+    <div class="event-section">
+        <img src="jacuzzi.png" alt="Ceremony Illustration" class="event-image" id="jacuzzi" style="width: 200px; margin-bottom: 20px;">
+        <div>
+            <h3 style="font-size: 1.4rem; font-family: 'Baskervville SC', serif;">Wedding Ceremony & Reception</h3>
+            <p style="font-size: 1.3rem; line-height: 1.7;">
+                <strong>Friday, June 6 from 6:00PM to midnight</strong><br>
+                Jacuzzi Vineyards, Sonoma CA<br><br>
+                Join us for an unforgettable evening as we exchange vows and celebrate with dinner, dancing, and plenty of joy.<br><br>
+                A shuttle will be available on the wedding day to transport guests between Sonoma Plaza and Jacuzzi Vineyards, both before and after the night. There is ample parking at the venue, and cars can be left overnight until 10AM the next day. Ubers/Lyfts are difficult to obtain at night in Sonoma, so please plan accordingly.<br><br>
+                After the ceremony, the function is <em>Festive Black Tie</em>.<br>
+                Many folks (especially those in Sonoma from out of town) are planning group stays up top. See our hotel suggestions and feel free to join in!
+            </p>
+        </div>
+    </div>
+
+    <div class="event-section">
+        <img src="croissant.png" alt="Farewell Illustration" class="event-image" style="width: 150px; margin-bottom: 20px;">
+        <div>
+            <h3 style="font-size: 1.4rem; font-family: 'Baskervville SC', serif;">Farewell Coffee</h3>
+            <p style="font-size: 1.3rem; line-height: 1.7;">
+                <strong>Saturday, June 7</strong><br>
+                Sonoma Plaza<br>
+                10:00 to 11:30AM<br><br>
+                We'll be hanging out in the plaza park with coffee and baked treats. Join us for a gentle, post-celebration farewell for those heading out or a little more Sonoma sunshine with us.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- End of The Weekend Details Section -->
+
+<!-- Start of More Weekend Details Section -->
+<div class="more-weekend-details">
+    <h2>More Weekend Details</h2>
+</div>
+<div class="white-container" style="margin-top: 80px; text-align: left; margin-left: 0px; max-width: 100%;">
+    <div class="event-section" style="display: flex; align-items: left; gap: 40px; text-align: left;">
+        <img src="stairwell.png" alt="City Hall Stairwell" style="width: 40%; margin-left: -25px;">
+        <div style="text-align: left;  max-width: 600px">
+    <div style="margin-bottom: 20px;">
+  <h2 style="font-size: 2.2rem; font-family: 'Baskervville SC', serif; margin: 0;">What to Wear</h2>
+  <h3 style="font-size: 1.3rem; font-style: italic; margin-top: 0.4em;">(But Make It Yours)</h3>
+</div>
+        <p style="font-size: 1.3rem; line-height: 1.6;">
+            These are vibes to guide you, but feel free to embrace your own style! We just want you there to celebrate with us, so wear whatever makes you feel great and comfortable.<br><br>
+            <i>Welcome Party:</i> Vineyard Chic<br>
+            Polished yet relaxed with a wine country touch.</p>
+            <ul style="font-size: 1.3rem; line-height: 1.6;">
+                <li>Women: Sundresses, midi skirts, or tailored pants with a stylish blouse. Bring a light shawl or jacket for the evening.</li>
+                <li>Men: Lightweight button-downs or polos with chinos, tailored shorts, or dark jeans. </li>
+            </ul>
+        <p style="font-size: 1.3rem; line-height: 1.6;">
+            <i>Wedding Attire:</i> Colorful Black Tie<br>
+            A formal evening with a fun, colorful twist!</p>
+            <ul style="font-size: 1.3rem; line-height: 1.6;">
+                <li>Women: Full-length gowns or dresses in bold or rich colors. </li>
+                <li>Men: Tuxedos or dark suits with colorful ties, pocket squares, or fun accessories to embrace the celebratory spirit.</li>
+            </ul>
+        <p style="font-size: 1.3rem; line-height: 1.6;">
+            <i>Farewell Coffee:</i> Summer Casual<br>
+            Easygoing and comfortable for a sunny morning in the park.
+        </p>
+    </div>
+</div>
+
+<!-- End of More Weekend Details Section -->
+
+        
+<div class="overjoyed" style="margin-top: 70px">
+    <div class="overjoyed-left">
+        Having you celebrate with us is truly what matters most! Your love and support mean the world, and we can’t wait to share this special time with you. But if you’d like to give a gift, we’ve put together a registry on With Joy with some things that will help us start our next chapter together.
+    </div>
+    <a target="_blank" href="https://withjoy.com/isabel-and-dillon-jun-25/registry"><img src="registry.svg"></a>
+</div>
+
     
+<div class="white-container" style="margin-top: 80px; text-align: left; margin-left: 0px; max-width: 100%;">
+    <div class="event-section" style="display: flex; align-items: left; gap: 40px; text-align: left;">
+      <img src="rotunda.png" alt="City Hall Stairwell" style="width: 40%; margin-left: -25px;">
+      <div style="text-align: left; max-width: 600px; margin-top: 100px">
+        <p style="font-size: 2.3rem; line-height: 1.6; color: #434B26">
+          To be loved but not known is comforting but superficial.<br><br>
+          To be known and not loved is our greatest fear.<br><br>
+          But to be fully known—and truly loved is, well, a lot like being loved by God.<br><br>
+          — Timothy Keller
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div>
+    <img src="see-you-soon.png" style="max-width: 100%">
+  </div>
     
     <div class="footnote">
         <div class="designer-credit">
@@ -156,3 +189,6 @@
     </div>
 </body>
 </html>
+
+
+
